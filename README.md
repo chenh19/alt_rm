@@ -1,1 +1,1 @@
-# Alternative rm command for linux
+# Alternative rm command for Linux
