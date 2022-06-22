@@ -1,1 +1,1 @@
-# alt_delete
+# Alternative rm command for linux
