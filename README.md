@@ -19,7 +19,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/chenh19/alt_rm/main/uninstall
 ```
 rm file_name "file name" folder_path folder_path/ "folder path" "folder path"/ etc
 ```
-**Delete files permanently (empty ```~/.trash/``` folder):** 
+**Delete all the trashed files permanently (empty ```~/.trash/``` folder):** 
 ```
 rm-perm
 ```  
