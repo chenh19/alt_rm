@@ -1,5 +1,5 @@
 # Alternative rm command for Linux
-*Current version: v1.1.3*
+*Current version: v1.2.0*
 
 ## Introduction
 - This tool is intended to replace the Linux default ```rm``` command, which deletes files directly and may cause unwanted troubles. 
@@ -26,6 +26,11 @@ bash <(wget -qO- https://raw.githubusercontent.com/chenh19/alt_rm/main/uninstall
 rm file_name "file name" folder_path/ folder_path "folder path"/ "folder path" etc
 ```
 **Note:** original ```rm``` arguments like ```-rf``` will be **silently ommitted**.  
+
+- **Check all the trahs files (list files in ```~/.trash/```):**
+```
+rm-check
+```
 
 - **Delete all the trashed files permanently (empty ```~/.trash/``` folder):** 
 ```
