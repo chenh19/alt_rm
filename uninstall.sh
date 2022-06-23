@@ -20,7 +20,7 @@ case "$choice" in
 
         # remove shell scripts
         [ -f ~/.rm.sh ] && rm ~/.rm.sh
-        [ -f ~/.rm-check.sh ] && ~/.rm-check.sh
+        [ -f ~/.rm-check.sh ] && rm ~/.rm-check.sh
         [ -f ~/.rm-perm.sh ] && rm ~/.rm-perm.sh
         sleep 1
 
