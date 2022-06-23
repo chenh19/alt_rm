@@ -19,4 +19,4 @@ mv -f ./alt_rm-main/src/rm.sh ~/.rm.sh && mv -f ./alt_rm-main/src/rm-perm.sh ~/.
 echo -e "\nalias rm='bash ~/.rm.sh'\nalias rm-clean='bash ~/.rm-clean.sh'" >> ~/.bashrc
 
 # notify end
-echo -e "${TEXT_GREEN}Alternative <rm> command installed! Please reopen terminal before using the command. ${TEXT_RESET} \n" && sleep 1
+echo -e "${TEXT_GREEN}Alternative <rm> command configured! Please reopen terminal before using the command. ${TEXT_RESET} \n" && sleep 1
