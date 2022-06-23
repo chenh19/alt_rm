@@ -2,7 +2,9 @@
 *Current version: v1.0.0*
 
 ## Introduction
-This tool is intended to replace the Linux default ```rm``` command, which delete files directly and may cause unwanted troubles. With almost unchanged command, **alt_rm** implements an equivalent function to Recycle Bin, moving files to ```~/.trash``` folder rather than deleting them immediately.
+- This tool is intended to replace the Linux default ```rm``` command, which delete files directly and may cause unwanted troubles. 
+- With almost unchanged ```rm``` syntax, this tool implements an equivalent function to Recycle Bin, "deleting" files to the hidden ```~/.trash/``` folder rather than deleting them immediately.
+- In addition, this tool also provides a ```rm-perm``` command to quickly delete all files in ```/.trash/``` with user confirmation.
 
 ## How to setup
 
