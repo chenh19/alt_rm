@@ -12,8 +12,8 @@ case "$choice" in
         echo -e " \n${TEXT_YELLOW}Uninstalling alternative <rm> command... ${TEXT_RESET} \n" && sleep 1
 
         # remove alias
-        sed -i '/alias rm=/d' ~/.bashrc
-        sed -i '/alias rm-perm=/d' ~/.bashrc
+        if grep -q "alias rm='bash ~/.rm.sh'" ~/.bashrc ; then sed -i '/alias rm=/d' ~/.bashrc ; fi
+        if grep -q "alias rm-perm='bash ~/.rm-perm.sh'" ~/.bashrc ; then sed -i '/alias rm-perm=/d' ~/.bashrc ; fi
         sleep 1
 
         # remove shell scripts
