@@ -27,12 +27,12 @@ rm file_name "file name" folder_path/ folder_path "folder path"/ "folder path" e
 ```
 **Note:** original ```rm``` arguments like ```-rf``` are allowed but not required. They will just be **silently ommitted**.  
 
-- **Check all the trashed files (list files in ```~/.trash/```):**
+- **Check all the trashed files (list files in the ```~/.trash/``` folder):**
 ```
 rm-check
 ```
 
-- **Delete all the trashed files permanently (empty ```~/.trash/``` folder):** 
+- **Delete all the trashed files permanently (empty the ```~/.trash/``` folder):** 
 ```
 rm-perm
 ```
