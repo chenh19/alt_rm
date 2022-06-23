@@ -27,7 +27,7 @@ rm file_name "file name" folder_path/ folder_path "folder path"/ "folder path" e
 ```
 **Note:** original ```rm``` arguments like ```-rf``` will be **silently ommitted**.  
 
-- **Check all the trahs files (list files in ```~/.trash/```):**
+- **Check all the trashed files (list files in ```~/.trash/```):**
 ```
 rm-check
 ```
