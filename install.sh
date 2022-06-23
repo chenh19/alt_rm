@@ -13,7 +13,7 @@ echo -e " \n${TEXT_YELLOW}Installing alternative <rm> command... ${TEXT_RESET} \
 cd ~/.trash/
 [ ! -f alt_rm.zip ] && wget -q https://codeload.github.com/chenh19/alt_rm/zip/refs/heads/main -O alt_rm.zip && sleep 1
 unzip -o -q alt_rm.zip && rm alt_rm.zip && sleep 1
-mv -f ./alt_rm-main/src/rm.sh ~/.rm.sh && mv -f ./alt_rm-main/src/rm-perm.sh ~/.rm-perm.sh && rm -rf ./alt_rm-main/ && sleep 1
+mv -f ./alt_rm-main/src/rm.sh ~/.rm.sh && mv -f ./alt_rm-main/src/rm-check.sh ~/.rm-check.sh && mv -f ./alt_rm-main/src/rm-perm.sh ~/.rm-perm.sh && rm -rf ./alt_rm-main/ && sleep 1
 
 # set alias in bash
 [ ! -f ~/.bashrc] ] && touch ~/.bashrc
