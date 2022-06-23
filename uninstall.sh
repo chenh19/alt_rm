@@ -14,11 +14,13 @@ case "$choice" in
 
         # remove alias
         if grep -q "alias rm='bash ~/.rm.sh >/dev/null 2>&1'" ~/.bashrc ; then sed -i '/alias rm=/d' ~/.bashrc ; fi
+        if grep -q "alias rm-check='bash ~/.rm-check.sh'" ~/.bashrc ; then sed -i '/alias rm-check=/d' ~/.bashrc ; fi
         if grep -q "alias rm-perm='bash ~/.rm-perm.sh'" ~/.bashrc ; then sed -i '/alias rm-perm=/d' ~/.bashrc ; fi
         sleep 1
 
         # remove shell scripts
         [ -f ~/.rm.sh ] && rm ~/.rm.sh
+        [ -f ~/.rm-check.sh ] && ~/.rm-check.sh'
         [ -f ~/.rm-perm.sh ] && rm ~/.rm-perm.sh
         sleep 1
 
