@@ -6,7 +6,7 @@ TEXT_GREEN='\e[1;32m'
 TEXT_RESET='\e[0m'
 
 # notify start
-echo -e " \n${TEXT_YELLOW}Installing alternative <rm> command...${TEXT_RESET} \n" && sleep 1
+echo -e " \n${TEXT_YELLOW}Installing alternative <rm> command... ${TEXT_RESET} \n" && sleep 1
 
 # deploy shell scripts
 [ ! -d ~/.trash/ ] && mkdir ~/.trash/ && cd ~/.trash/ && sleep 1
