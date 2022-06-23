@@ -5,7 +5,7 @@ TEXT_YELLOW='\e[1;33m'
 TEXT_GREEN='\e[1;32m'
 TEXT_RESET='\e[0m'
 
-# confirm removal
+# confirm and remove
 read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Remove alternative <rm> command? [y/n]'$TEXT_RESET)"$' \n' choice
 case "$choice" in
   y|Y ) # notify start
@@ -28,4 +28,6 @@ case "$choice" in
   * )   # notify end
         echo -e "${TEXT_GREEN}Alternative <rm> command not removed. ${TEXT_RESET} \n" && sleep 1;;
 esac
-echo -e "${TEXT_GREEN}All trashed files remain in ~/.trash/ folder. ${TEXT_RESET} \n" && sleep 1;;
+
+# notify trash files path
+echo -e "${TEXT_GREEN}All trashed files remain in ~/.trash/ folder. ${TEXT_RESET} \n" && sleep 1
