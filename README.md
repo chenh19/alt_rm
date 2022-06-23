@@ -1,5 +1,5 @@
 # Alternative rm command for Linux
-*Current version: v1.1.2*
+*Current version: v1.1.3*
 
 ## Introduction
 - This tool is intended to replace the Linux default ```rm``` command, which deletes files directly and may cause unwanted troubles. 
