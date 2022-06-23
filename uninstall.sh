@@ -18,10 +18,12 @@ case "$choice" in
         sleep 1
 
         # remove shell scripts
-        rm ~/.rm.sh ~/.rm-perm.sh && sleep 1
+        [ -f ~/.rm.sh ] && rm ~/.rm.sh
+        [ -f ~/.rm-perm.sh ] && rm ~/.rm-perm.sh
+        sleep 1
 
         # notify end
-        echo -e "${TEXT_GREEN}Alternative <rm> command removed! Please reopen the terminal. ${TEXT_RESET} \n" && sleep 1;;
+        echo -e "${TEXT_GREEN}Alternative <rm> command removed! Please reopen the terminal. ${TEXT_RESET} \n";;
 
   n|N ) # notify end
         echo -e " \n${TEXT_GREEN}Alternative <rm> command not removed. ${TEXT_RESET} \n";;
