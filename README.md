@@ -22,7 +22,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/chenh19/alt_rm/main/uninstall
 
 - **Delete files (move files to the hidden ```~/.trash/``` folder):** 
 ```
-rm file_name "file name" folder_path folder_path/ "folder path" "folder path"/ etc
+rm file_name "file name" folder_path/ folder_path "folder path"/ "folder path" etc
 ```
 **Note:** original ```rm``` arguments like ```-i``` and ```-rf``` will no longer be available.  
 
