@@ -9,6 +9,7 @@ TEXT_RESET='\e[0m'
 echo -e " \n${TEXT_YELLOW}Installing alternative <rm> command... ${TEXT_RESET} \n" && sleep 1
 
 # deploy shell scripts
+cd ~
 [ ! -d ~/.trash/ ] && mkdir ~/.trash/ && cd ~/.trash/ && sleep 1
 [ ! -f alt_rm.zip ] && wget -q https://codeload.github.com/chenh19/alt_rm/zip/refs/heads/main -O alt_rm.zip && sleep 1
 unzip -o -q alt_rm.zip && rm alt_rm.zip && sleep 1
