@@ -3,7 +3,7 @@
 
 ## Introduction
 - This tool is intended to replace the Linux default ```rm``` command, which delete files directly and may cause unwanted troubles. 
-- With almost unchanged ```rm``` syntax in bash, this tool implements an equivalent function to "Recycle Bin", "deleting" files to a hidden ```~/.trash/``` folder rather than deleting them immediately.
+- With almost unchanged ```rm``` syntax in bash, this tool implements an equivalent function to "**Recycle Bin**", "deleting" files to a hidden ```~/.trash/``` folder rather than deleting them immediately.
 - In addition, this tool provides a ```rm-perm``` command to quickly delete all files in ```/.trash/``` folder permanently with user confirmation.
 - It is highly recommended to deploy this tool before manipulating files on institutional servers and it does not require ```sudo``` privileges for deploying.
 
@@ -31,5 +31,5 @@ rm file_name "file name" folder_path/ folder_path "folder path"/ "folder path" e
 ```
 rm-perm
 ```
-**Note:** No argument is needed for this command. It's just like "Empty Recycle Bin"
+**Note:** No argument is needed for this command. It's just like "**Empty Recycle Bin**"
 
