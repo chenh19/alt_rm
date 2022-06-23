@@ -25,7 +25,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/chenh19/alt_rm/main/uninstall
 ```
 rm file_name "file name" folder_path/ folder_path "folder path"/ "folder path" etc
 ```
-**Note:** original ```rm``` arguments like ```-i``` and ```-rf``` will **no longer** be available.  
+**Note:** original ```rm``` arguments like ```-rf``` will be **silently ommitted**.  
 
 - **Delete all the trashed files permanently (empty ```~/.trash/``` folder):** 
 ```
