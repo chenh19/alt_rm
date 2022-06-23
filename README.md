@@ -37,7 +37,7 @@ rm-check
 rm-perm
 ```
 **Note:** No argument is needed for this command. It's just like "**Empty Recycle Bin**"
-
+  
 <p align="center">
   <img src="https://raw.githubusercontent.com/chenh19/alt_rm/main/alt_rm.png" width=85%>
 </p>
