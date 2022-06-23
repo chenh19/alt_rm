@@ -30,4 +30,4 @@ case "$choice" in
 esac
 
 # notify trash files path
-echo -e "${TEXT_GREEN}All trashed files remain in ~/.trash/ folder. ${TEXT_RESET} \n" && sleep 1
+echo -e "${TEXT_YELLOW}Note: all trashed files remain in ~/.trash/ folder. ${TEXT_RESET} \n" && sleep 1
