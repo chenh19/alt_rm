@@ -23,10 +23,10 @@ case "$choice" in
         echo -e "${TEXT_GREEN}Alternative <rm> command removed! Please reopen the terminal. ${TEXT_RESET} \n" && sleep 1;;
 
   n|N ) # notify end
-        echo -e "${TEXT_GREEN}Alternative <rm> command not removed. ${TEXT_RESET} \n" && sleep 1;;
+        echo -e " \n${TEXT_GREEN}Alternative <rm> command not removed. ${TEXT_RESET} \n" && sleep 1;;
 
   * )   # notify end
-        echo -e "${TEXT_GREEN}Alternative <rm> command not removed. ${TEXT_RESET} \n" && sleep 1;;
+        echo -e " \n${TEXT_GREEN}Alternative <rm> command not removed. ${TEXT_RESET} \n" && sleep 1;;
 esac
 
 # notify trash files path
