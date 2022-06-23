@@ -30,5 +30,6 @@ rm file_name "file name" folder_path/ folder_path "folder path"/ "folder path" e
 - **Delete all the trashed files permanently (empty ```~/.trash/``` folder):** 
 ```
 rm-perm
-```  
+```
+**Note:** No argument is needed for this command.
 
