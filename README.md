@@ -15,6 +15,12 @@ bash <(wget -qO- https://raw.githubusercontent.com/chenh19/alt_rm/main/uninstall
 
 ## How to use
 
-**Delete files (move files to ```~/.trash/``` folder):** ```rm file_name "file name" folder_path "folder path" etc```  
-**Delete files permanently (empty ```~/.trash/``` folder):** ```rm-perm```  
+**Delete files (move files to ```~/.trash/``` folder):** 
+```
+rm file_name "file name" folder_path folder_path/ "folder path" "folder path"/ etc
+```
+**Delete files permanently (empty ```~/.trash/``` folder):** 
+```
+rm-perm
+```  
 
