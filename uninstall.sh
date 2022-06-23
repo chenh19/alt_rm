@@ -6,6 +6,7 @@ TEXT_GREEN='\e[1;32m'
 TEXT_RESET='\e[0m'
 
 # confirm and remove
+echo ""
 read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Remove alternative <rm> command? [y/n]'$TEXT_RESET)"$' \n' choice
 case "$choice" in
   y|Y ) # notify start
