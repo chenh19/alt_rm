@@ -13,7 +13,7 @@ case "$choice" in
 
         # remove alias
         sed -i "s+alias rm='bash ~/.rm.sh'++g" ~/.bashrc
-        sed -i "s+alias rm-permn='bash ~/.rm-perm.sh'++g" ~/.bashrc
+        sed -i "s+alias rm-perm='bash ~/.rm-perm.sh'++g" ~/.bashrc
         sleep 1
 
         # remove shell scripts
