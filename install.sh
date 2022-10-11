@@ -22,4 +22,4 @@ if ! grep -q "alias rm-check='bash ~/.rm-check.sh'" ~/.bashrc ; then echo -e "al
 if ! grep -q "alias rm-perm='bash ~/.rm-perm.sh'" ~/.bashrc ; then echo -e "alias rm-perm='bash ~/.rm-perm.sh'" >> ~/.bashrc ; fi
 
 # notify end
-echo -e "${TEXT_GREEN}Alternative <rm> command configured! Please reopen terminal before using the command. ${TEXT_RESET} \n" && sleep 1
+echo -e "${TEXT_GREEN}Alternative ${TEXT_YELLOW}<rm>${TEXT_GREEN} command configured! Please reopen terminal before using the command. ${TEXT_RESET} \n" && sleep 1
