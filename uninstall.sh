@@ -27,9 +27,6 @@ case "$choice" in
         # notify end
         echo -e "${TEXT_GREEN}Alternative <rm> command removed! Please reopen the terminal. ${TEXT_RESET} \n";;
 
-  n|N ) # notify end
-        echo -e " \n${TEXT_GREEN}Alternative <rm> command not removed. ${TEXT_RESET} \n";;
-
   * )   # notify end
         echo -e " \n${TEXT_GREEN}Alternative <rm> command not removed. ${TEXT_RESET} \n";;
 esac
