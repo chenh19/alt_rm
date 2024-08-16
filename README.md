@@ -1,5 +1,5 @@
 # Alternative rm command for Linux
-*Current version: v1.2.3*
+*Current version: v1.2.4*
 
 ## Introduction
 - This tool is intended to replace the Linux default ```rm``` command, which directly deletes files from the drive and may cause unwanted troubles. 
@@ -11,12 +11,12 @@
 
 - **Install:** connect to internet and execute the below command in terminal  
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/chenh19/alt_rm/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/install.sh)
 ```
 
 - **Uninstall:** connect to internet and execute the below command in terminal  
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/chenh19/alt_rm/main/uninstall.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/uninstall.sh)
 ```
 
 ## How to use
