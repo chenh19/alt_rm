@@ -7,6 +7,7 @@ TEXT_RESET='\e[0m'
 
 # notify start
 echo -e " \n${TEXT_YELLOW}Configuring alternative <rm> command... ${TEXT_RESET} \n" && sleep 1
+if ! dpkg -l | grep -q "^ii.*wget" ; then sudo apt-get update -qq && sudo apt-get install wget -y && sleep 1 ; fi
 
 # deploy shell scripts
 [ ! -d ~/.trash/ ] && mkdir ~/.trash/
