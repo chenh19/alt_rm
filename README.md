@@ -1,4 +1,5 @@
-# Alternative rm command for Linux
+# Alternative ```rm```
+**An alternative ```rm``` command for Unix/Linux**  
 *Current version: v2.0.0*
 
 ## Introduction
@@ -9,14 +10,24 @@
 
 ## How to setup
 
-- **Install:** connect to internet and execute the below command in terminal  
+- **Install on Linux:** connect to internet and execute the below command in terminal  
 ```
 bash <(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/install.sh)
 ```
 
-- **Uninstall:** connect to internet and execute the below command in terminal  
+- **Install on Unix (such as MacOS):** connect to internet and execute the below command in terminal
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/install.sh)"
+```
+
+- **Uninstall on Linux:** connect to internet and execute the below command in terminal  
 ```
 bash <(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/uninstall.sh)
+```
+
+- **Uninstall on Unix (such as MacOS):** connect to internet and execute the below command in terminal  
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/uninstall.sh)"
 ```
 
 ## How to use
