@@ -10,22 +10,12 @@
 
 ## How to setup
 
-- **Install on Linux:** connect to internet and execute the below command in terminal  
-```
-bash <(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/install.sh)
-```
-
-- **Install on Unix (such as MacOS):** connect to internet and execute the below command in terminal
+- **Install:** connect to internet and execute the below command in terminal
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/install.sh)"
 ```
 
-- **Uninstall on Linux:** connect to internet and execute the below command in terminal  
-```
-bash <(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/uninstall.sh)
-```
-
-- **Uninstall on Unix (such as MacOS):** connect to internet and execute the below command in terminal  
+- **Uninstall:** connect to internet and execute the below command in terminal  
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/uninstall.sh)"
 ```
