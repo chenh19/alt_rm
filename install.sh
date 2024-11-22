@@ -19,7 +19,7 @@ mv -f ./alt_rm-main/src/rm.sh ~/.rm.sh && mv -f ./alt_rm-main/src/rm-check.sh ~/
 
 # set alias in bash
 [ ! -f ~/.bashrc] ] && touch ~/.bashrc
-if ! grep -q "alias rm='bash ~/.rm.sh >/dev/null 2>&1'" ~/.bashrc ; then echo -e "alias rm='bash ~/.rm.sh >/dev/null 2>&1'" >> ~/.bashrc ; fi
+if ! grep -q "alias rm='bash ~/.rm.sh'" ~/.bashrc ; then echo -e "alias rm='bash ~/.rm.sh'" >> ~/.bashrc ; fi
 if ! grep -q "alias rm-check='bash ~/.rm-check.sh'" ~/.bashrc ; then echo -e "alias rm-check='bash ~/.rm-check.sh'" >> ~/.bashrc ; fi
 if ! grep -q "alias rm-purge='bash ~/.rm-purge.sh'" ~/.bashrc ; then echo -e "alias rm-purge='bash ~/.rm-purge.sh'" >> ~/.bashrc ; fi
 
