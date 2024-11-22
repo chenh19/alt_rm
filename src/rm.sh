@@ -7,4 +7,5 @@ for a; do
    *) set -- "$@" "$a";;
    esac
 done
-mv -f --backup=numbered "${@%$'\n'}" ~/.trash/
+mv -f "${@%$'\n'}" ~/.trash/
+#mv -f --backup=numbered "${@%$'\n'}" ~/.trash/
