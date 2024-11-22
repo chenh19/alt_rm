@@ -13,7 +13,7 @@ case "$choice" in
         echo -e " \n${TEXT_YELLOW}Uninstalling alternative <rm> command... ${TEXT_RESET} \n" && sleep 1
 
         # remove alias
-        if grep -q "alias rm='bash ~/.rm.sh >/dev/null 2>&1'" ~/.bashrc ; then sed -i '/alias rm=/d' ~/.bashrc ; fi
+        if grep -q "alias rm='bash ~/.rm.sh'" ~/.bashrc ; then sed -i '/alias rm=/d' ~/.bashrc ; fi
         if grep -q "alias rm-check='bash ~/.rm-check.sh'" ~/.bashrc ; then sed -i '/alias rm-check=/d' ~/.bashrc ; fi
         if grep -q "alias rm-purge='bash ~/.rm-purge.sh'" ~/.bashrc ; then sed -i '/alias rm-purge=/d' ~/.bashrc ; fi
         if grep -q "alias rm-perm='bash ~/.rm-perm.sh'" ~/.bashrc ; then sed -i '/alias rm-perm=/d' ~/.bashrc ; fi
