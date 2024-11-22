@@ -1,6 +1,6 @@
 #!/bin/bash
-TEXT_YELLOW='\e[1;33m'
-TEXT_RESET='\e[0m'
+TEXT_YELLOW=$(tput bold; tput setaf 3)
+TEXT_RESET=$(tput sgr0)
 read -n1 -s -r -p "$(echo -e $TEXT_YELLOW' \nWARNING! Remove all trashed files permanently? [y/n]'$TEXT_RESET)"$' \n' choice
 case "$choice" in
   y|Y )
