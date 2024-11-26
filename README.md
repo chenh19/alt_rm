@@ -1,6 +1,6 @@
 # Alternative ```rm```
 **An alternative ```rm``` command for Unix/Linux**  
-*Current version: v2.0.0*
+*Current version: v2.0.1*
 
 ## Introduction
 - This tool is intended to replace the Unix/Linux (including MacOS) default ```rm``` command, which directly deletes files from the drive and may cause unwanted troubles. 
@@ -12,12 +12,12 @@
 
 - **Install:** connect to internet and execute the below command in terminal
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/install.sh)"
 ```
 
 - **Uninstall:** connect to internet and execute the below command in terminal  
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/uninstall.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/uninstall.sh)"
 ```
 
 ## How to use
