@@ -7,10 +7,10 @@ TEXT_RESET=$(tput sgr0)
 
 # confirm and remove
 echo ""
-read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Remove alternative <rm> command? [y/n]'$TEXT_RESET)"$' \n' choice
+read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Remove alternative <rm> command? [y/n]'$TEXT_RESET)"$'\n' choice
 case "$choice" in
   y|Y ) # notify start
-        echo -e " \n${TEXT_YELLOW}Uninstalling alternative <rm> command... ${TEXT_RESET} \n" && sleep 1
+        echo -e "\n${TEXT_YELLOW}Uninstalling alternative <rm> command... ${TEXT_RESET}\n" && sleep 1
 
         # remove alias
         if grep -q "alias rm='bash ~/.rm.sh'" ~/.bashrc ; then sed -i '/alias rm=/d' ~/.bashrc ; fi
@@ -25,11 +25,11 @@ case "$choice" in
         sleep 1
 
         # notify end
-        echo -e "${TEXT_GREEN}Alternative <rm> command removed! Please reopen the terminal. ${TEXT_RESET} \n";;
+        echo -e "${TEXT_GREEN}Alternative <rm> command removed! Please reopen the terminal. ${TEXT_RESET}\n";;
 
   * )   # notify end
-        echo -e " \n${TEXT_GREEN}Alternative <rm> command not removed. ${TEXT_RESET} \n";;
+        echo -e "\n${TEXT_GREEN}Alternative <rm> command not removed. ${TEXT_RESET}\n";;
 esac
 
 # notify trash files path
-echo -e "${TEXT_YELLOW}Note: all trashed files remain in ~/.trash/ folder. ${TEXT_RESET} \n" && sleep 1
+echo -e "${TEXT_YELLOW}Note: all trashed files remain in ~/.trash/ folder. ${TEXT_RESET}\n" && sleep 1
