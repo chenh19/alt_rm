@@ -1,6 +1,6 @@
 # Alternative ```rm```
 **An alternative ```rm``` command for Unix/Linux**  
-*Current version: v2.1.0*
+*Current version: v2.1.1*
 
 ## Introduction
 - This tool is intended to replace the Unix/Linux (including MacOS) default ```rm``` command, which directly deletes files from the drive and may cause unwanted troubles. 
