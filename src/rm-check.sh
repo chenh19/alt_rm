@@ -4,3 +4,4 @@ TEXT_RESET=$(tput sgr0)
 echo -e " \n${TEXT_YELLOW}These are the trashed files: ${TEXT_RESET} \n"
 ls ~/.trash/
 echo ""
+kwriteconfig5 --file ~/.trash/.directory --group "Desktop Entry" --key Icon "folder-trash"
