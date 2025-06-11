@@ -5,6 +5,7 @@ read -n1 -s -r -p "$(echo -e $TEXT_YELLOW' \nWARNING! Remove all trashed files p
 case "$choice" in
   y|Y )
   rm -rf ~/.trash/*
+  kwriteconfig5 --file ~/.trash/.directory --group "Desktop Entry" --key Icon "folder-trash"
   echo -e " \n${TEXT_YELLOW}Files deleted permanently. ${TEXT_RESET} \n";;
   n|N )
   echo -e " \n${TEXT_YELLOW}Deletion cancelled. ${TEXT_RESET} \n";;
