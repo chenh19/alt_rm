@@ -7,13 +7,11 @@ TEXT_RESET=$(tput sgr0)
 
 # notify start
 echo -e "\n${TEXT_YELLOW}Configuring alternative <rm> command... ${TEXT_RESET}\n" && sleep 1
-#if ! dpkg -l | grep -q "^ii.*wget" ; then sudo apt-get update -qq && sudo apt-get install wget -y && sleep 1 ; fi
 
 # deploy shell scripts
 [ ! -d ~/.trash/ ] && mkdir ~/.trash/
 echo -e "[Desktop Entry]\nIcon=folder-trash" > ~/.trash/.directory
 cd ~/.trash/
-#[ ! -f alt_rm.zip ] && wget -q https://codeload.github.com/chenh19/alt_rm/zip/refs/heads/main -O alt_rm.zip && sleep 1
 [ ! -f alt_rm.zip ] && curl -fsSL https://codeload.github.com/chenh19/alt_rm/zip/refs/heads/main -o alt_rm.zip && sleep 1
 unzip -o -q alt_rm.zip && rm alt_rm.zip && sleep 1
 mv -f ./alt_rm-main/src/rm.sh ~/.rm.sh && mv -f ./alt_rm-main/src/rm-check.sh ~/.rm-check.sh && mv -f ./alt_rm-main/src/rm-purge.sh ~/.rm-purge.sh && rm -rf ./alt_rm-main/ && sleep 1
