@@ -11,4 +11,4 @@ case "$choice" in
   * )
   echo -e "\n${TEXT_YELLOW}Deletion cancelled. ${TEXT_RESET}\n";;
 esac
-kwriteconfig5 --file ~/.trash/.directory --group "Desktop Entry" --key Icon "folder-trash"
+echo -e "[Desktop Entry]\nIcon=folder-trash" > ~/.trash/.directory
