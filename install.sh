@@ -11,6 +11,7 @@ echo -e " \n${TEXT_YELLOW}Configuring alternative <rm> command... ${TEXT_RESET} 
 
 # deploy shell scripts
 [ ! -d ~/.trash/ ] && mkdir ~/.trash/
+kwriteconfig5 --file ~/.trash/ --group "Desktop Entry" --key Icon "folder-trash"
 cd ~/.trash/
 #[ ! -f alt_rm.zip ] && wget -q https://codeload.github.com/chenh19/alt_rm/zip/refs/heads/main -O alt_rm.zip && sleep 1
 [ ! -f alt_rm.zip ] && curl -fsSL https://codeload.github.com/chenh19/alt_rm/zip/refs/heads/main -o alt_rm.zip && sleep 1
