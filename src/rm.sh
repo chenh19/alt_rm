@@ -12,4 +12,4 @@ for file in "$@"; do
         echo "rm: cannot remove '$file': No such file or directory" >&2
     fi
 done
-kwriteconfig5 --file ~/.trash/.directory --group "Desktop Entry" --key Icon "folder-trash"
+echo -e "[Desktop Entry]\nIcon=folder-trash" > ~/.trash/.directory
