@@ -6,7 +6,7 @@ TEXT_GREEN=$(tput bold; tput setaf 2)
 TEXT_RESET=$(tput sgr0)
 
 # notify start
-echo -e " \n${TEXT_YELLOW}Configuring alternative <rm> command... ${TEXT_RESET} \n" && sleep 1
+echo -e "\n${TEXT_YELLOW}Configuring alternative <rm> command... ${TEXT_RESET}\n" && sleep 1
 #if ! dpkg -l | grep -q "^ii.*wget" ; then sudo apt-get update -qq && sudo apt-get install wget -y && sleep 1 ; fi
 
 # deploy shell scripts
@@ -25,4 +25,4 @@ if ! grep -q "alias rm-check='bash ~/.rm-check.sh'" ~/.bashrc ; then echo -e "al
 if ! grep -q "alias rm-purge='bash ~/.rm-purge.sh'" ~/.bashrc ; then echo -e "alias rm-purge='bash ~/.rm-purge.sh'" >> ~/.bashrc ; fi
 
 # notify end
-echo -e "${TEXT_GREEN}Alternative ${TEXT_YELLOW}<rm>${TEXT_GREEN} command configured! Please reopen terminal before using the command. ${TEXT_RESET} \n" && sleep 1
+echo -e "${TEXT_GREEN}Alternative ${TEXT_YELLOW}<rm>${TEXT_GREEN} command configured! Please reopen terminal before using the command. ${TEXT_RESET}\n" && sleep 1
