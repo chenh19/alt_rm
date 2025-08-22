@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # set terminal font color
-TEXT_YELLOW=$(tput bold; tput setaf 3)
-TEXT_GREEN=$(tput bold; tput setaf 2)
-TEXT_RESET=$(tput sgr0)
+TEXT_YELLOW="$(tput bold)$(tput setaf 3)"
+TEXT_GREEN="$(tput bold)$(tput setaf 2)"
+TEXT_RESET="$(tput sgr0)"
 
 # confirm and remove
 echo ""
