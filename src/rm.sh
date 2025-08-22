@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 [ ! -d "$HOME/.trash/" ] && mkdir -p "$HOME/.trash/"
 if [ $# -eq 0 ]; then echo "rm: missing operand" >&2 && exit 1; fi
 for file in "$@"; do
