@@ -17,7 +17,7 @@ unzip -o -q alt_rm.zip && rm alt_rm.zip && sleep 1
 mv -f ./alt_rm-main/src/rm.sh ~/.rm.sh && mv -f ./alt_rm-main/src/rm-check.sh ~/.rm-check.sh && mv -f ./alt_rm-main/src/rm-purge.sh ~/.rm-purge.sh && rm -rf ./alt_rm-main/ && sleep 1
 
 # set alias in bash
-[ ! -f ~/.bashrc] ] && touch ~/.bashrc
+[ ! -f ~/.bashrc ] && touch ~/.bashrc
 tail -c 1 ~/.bashrc | read -r _ || echo >> ~/.bashrc
 if ! grep -q "alias rm='bash ~/.rm.sh'" ~/.bashrc ; then echo -e "alias rm='bash ~/.rm.sh'" >> ~/.bashrc ; fi
 if ! grep -q "alias rm-check='bash ~/.rm-check.sh'" ~/.bashrc ; then echo -e "alias rm-check='bash ~/.rm-check.sh'" >> ~/.bashrc ; fi
